@@ -1,0 +1,9 @@
+INSERT INTO public.tb_produto(
+	id, nome, valor, estoque, descricao_completa, descricao_simples, imagem)
+	VALUES (1, 'Pamonha Tradicional', 4, 50, 'Pamonha tradicional, feita com milho de qualidade, de forma artesanal e com carinho!', 'Pamonha quentinha!', '../assets/produtos/pamonha-tradicional.jpg'),
+	(2, 'Pamonha com Queijo', 5, 50, 'Pamonha com queijo, feita com milho e queijo coalho de qualidade, ambos de forma artesanal e com carinho!', 'Pamonha quentinha e com queijo coalho!', '../assets/produtos/pamonha-tradicional.jpg'),	
+	(3, 'Pamonha Doce', 5, 50, 'Pamonha docinha, feita com milho e açucar branco, de forma artesanal e com amor!', 'Pamonha quentinha e docinha!', '../assets/produtos/pamonha-tradicional.jpg'),	
+	(4, 'Escondidinho de Pamonha com linguiça', 20, 50, 'Escondidinho de pamonha cremosa recheada com linguiça calabresa defumada caseira, ambos feitos artesanalmente!', 'Escondidinho de pamonha, com linguiça artesanal!', '../assets/produtos/escondidinho-pamonha-linguica.jpg'),	
+	(5, 'Pamonha Recheada com Goiabada', 10, 50, 'Pamonha docinha de travessa, recheada com goiabada caseira, e feita com milho e açucar branco, de forma artesanal e com amor!', 'Pamonha com Goiabada de primeira qualidade!', '../assets/produtos/pamonha-goiabada-travessa.jpg'),	
+	(6, 'Bolo de Pamonha', 20, 50, 'Bolo fofinho, feito com uma tecnica similar ao de fazer pamonha, uma delicia!', 'Bolo de pamonha fofinho!', '../assets/produtos/bolo-pamonha.jpg'),	
+	(7, 'Bolinho de Pamonha Recheado', 6, 50, 'Bolinho fofinho, com um recheio cremoso feito de milho, uma delicia!', 'Bolinho de pamonha fofinho com recheio!', '../assets/produtos/bolinho-pamonha-recheado.jpg');	
