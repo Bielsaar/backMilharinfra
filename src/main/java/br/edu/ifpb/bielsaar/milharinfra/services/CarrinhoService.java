@@ -30,7 +30,8 @@ public class CarrinhoService {
 
     @Transactional
     public Carrinho inserirAoCarrinho (Carrinho carrinho) {
-        Carrinho produtoCarrinho = this.carrinhoRepository.findById(carrinho.getId()).orElse(null);
+        Carrinho produtoCarrinho = this.carrinhoRepository.findByNome(carrinho.getNome());
+        System.out.println("carrinho");
         if (produtoCarrinho != null){
             produtoCarrinho.adicionarQuantidadeCarrinho();
         }
@@ -40,11 +41,12 @@ public class CarrinhoService {
 
     @Transactional
     public Carrinho atualizarProdutoCarrinho (Carrinho carrinho){
-        Carrinho produtoCarrinho = this.carrinhoRepository.findById(carrinho.getId()).orElse(null);
+        System.out.println(carrinho.getQuantCarrinho());
+        Carrinho produtoCarrinho = this.carrinhoRepository.findByNome(carrinho.getNome());
         if (produtoCarrinho == null){
             throw new RuntimeException("Não existe esse produto no carrinho");
         }
-        return this.carrinhoRepository.save(produtoCarrinho);
+        return this.carrinhoRepository.save(carrinho);
     }
 
 
